@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Limpias para tu Hogar | El Futuro es Renovable</title>
+    <meta name="description" content="Una guía infográfica sobre cómo implementar energías solar, eólica y geotérmica en tu hogar para un futuro más sostenible y económico.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>El Futuro es Renovable</h1>
+            <p class="subtitle">Tu Hogar es el Comienzo.</p>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2>¿Por Qué Cambiar a Energía Limpia?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll">
+                    <h3>Ahorro Económico</h3>
+                    <p>Reduce drásticamente tu factura de electricidad, con ahorros de hasta un <span class="counter" data-target="80">0</span>% en climatización.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <h3>Independencia Energética</h3>
+                    <p>Genera tu propia energía y protégete de las fluctuaciones de precios de la red convencional.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.4s;">
+                    <h3>Impacto Ambiental</h3>
+                    <p>Disminuye la huella de carbono de tu hogar y contribuye a un planeta más sano para las futuras generaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <h2>Soluciones Energéticas para Tu Hogar</h2>
+            <div class="solutions-container">
+                <article class="solution-card animate-on-scroll" id="solar-card">
+                    <header class="solution-header">
+                        <h3>Energía Solar Fotovoltaica</h3>
+                    </header>
+                    <div class="solution-content">
+                        <p>La opción más popular, convierte la luz del sol directamente en electricidad para tu hogar.</p>
+                        <input type="checkbox" class="expander-checkbox" id="solar-expander">
+                        <div class="details-panel">
+                            <h4>¿Cómo funciona?</h4>
+                            <p>Los paneles capturan fotones, generando corriente continua (CC). Un inversor la convierte en corriente alterna (CA) para uso doméstico. El excedente puede inyectarse a la red.</p>
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Reducción significativa de la factura eléctrica.</li>
+                                <li>Mantenimiento casi nulo y larga vida útil (>25 años).</li>
+                                <li>Aumenta el valor de la propiedad.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Costo inicial considerable.</li>
+                                <li>Generación intermitente (depende del sol).</li>
+                            </ul>
+                        </div>
+                        <label for="solar-expander" class="expander-label"></label>
+                    </div>
+                </article>
+                <article class="solution-card animate-on-scroll" id="wind-card" style="transition-delay: 0.2s;">
+                    <header class="solution-header">
+                        <h3>Energía Eólica Doméstica</h3>
+                    </header>
+                    <div class="solution-content">
+                        <p>Ideal para zonas rurales o con vientos constantes, generando energía día y noche.</p>
+                        <input type="checkbox" class="expander-checkbox" id="wind-expander">
+                        <div class="details-panel">
+                            <h4>¿Cómo funciona?</h4>
+                            <p>El viento hace girar las aspas de un aerogenerador, lo que acciona una turbina que produce electricidad.</p>
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Puede generar energía 24/7.</li>
+                                <li>Excelente complemento para la energía solar.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Requiere vientos constantes y espacio abierto.</li>
+                                <li>Mayor costo inicial que la solar para la misma potencia.</li>
+                                <li>Posible impacto acústico y visual.</li>
+                            </ul>
+                        </div>
+                        <label for="wind-expander" class="expander-label"></label>
+                    </div>
+                </article>
+                <article class="solution-card animate-on-scroll" id="geo-card" style="transition-delay: 0.4s;">
+                    <header class="solution-header">
+                        <h3>Energía Geotérmica</h3>
+                    </header>
+                    <div class="solution-content">
+                        <p>La solución más eficiente para calefacción y refrigeración, usando la temperatura estable de la tierra.</p>
+                        <input type="checkbox" class="expander-checkbox" id="geo-expander">
+                        <div class="details-panel">
+                            <h4>¿Cómo funciona?</h4>
+                            <p>Una bomba de calor transfiere el calor del subsuelo a la casa en invierno, y viceversa en verano, a través de tuberías subterráneas.</p>
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Máxima eficiencia (ahorros de hasta 80%).</li>
+                                <li>Provee calefacción, refrigeración y agua caliente.</li>
+                                <li>Larga vida útil, bajo mantenimiento e instalación invisible.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Costo de inversión inicial muy elevado.</li>
+                                <li>Requiere terreno para la perforación o zanjas.</li>
+                            </ul>
+                        </div>
+                        <label for="geo-expander" class="expander-label"></label>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="comparison-section">
+        <div class="container">
+            <h2>Análisis Comparativo</h2>
+            <div class="table-container animate-on-scroll">
+                <table class="comparison-table">
+                    <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Energía Solar Fotovoltaica</th>
+                        <th>Energía Eólica Doméstica</th>
+                        <th>Energía Geotérmica</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td data-label="Característica">Costo Inicial</td>
+                        <td data-label="Solar">Moderado a Alto</td>
+                        <td data-label="Eólica">Alto</td>
+                        <td data-label="Geotérmica">Muy Alto</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Ahorro a Largo Plazo</td>
+                        <td data-label="Solar">Muy Alto</td>
+                        <td data-label="Eólica">Alto</td>
+                        <td data-label="Geotérmica">El más Alto (hasta 80%)</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Período de Retorno</td>
+                        <td data-label="Solar">4-8 años (con subsidios)</td>
+                        <td data-label="Eólica">Variable, > 6 años</td>
+                        <td data-label="Geotérmica">5-7 años</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Requisitos de Espacio</td>
+                        <td data-label="Solar">Techo con buena orientación</td>
+                        <td data-label="Eólica">Terreno abierto</td>
+                        <td data-label="Geotérmica">Terreno para perforación</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Mantenimiento</td>
+                        <td data-label="Solar">Muy Bajo</td>
+                        <td data-label="Eólica">Bajo a Moderado</td>
+                        <td data-label="Geotérmica">Muy Bajo</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Característica">Limitaciones Clave</td>
+                        <td data-label="Solar">Dependiente del sol</td>
+                        <td data-label="Eólica">Dependiente del viento, ruido</td>
+                        <td data-label="Geotérmica">Inversión inicial muy alta</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="local-guide" class="local-guide-section">
+        <div class="container">
+            <div class="local-guide-content animate-on-scroll">
+                <h2>Guía Práctica: Energías Renovables en Concepción y la Región del Biobío</h2>
+                <p>La transición a energías limpias es una realidad viable en nuestra región. Aquí encontrarás información clave para dar el siguiente paso.</p>
+
+                <h3>Potencial Climático de la Región</h3>
+                <p><strong>Solar:</strong> La Región del Biobío, especialmente en sus valles centrales, tiene un excelente potencial para la generación solar. Incluso en días nublados, los paneles modernos siguen produciendo energía de manera eficiente.</p>
+                <p><strong>Eólica:</strong> Gracias a sus condiciones de viento, sobre todo en la costa, la región es la segunda más importante de Chile para la energía eólica. Esto la convierte en una zona ideal para aerogeneradores domésticos si se cuenta con el espacio adecuado.</p>
+
+                <h3>Incentivos y Programas de Apoyo</h3>
+                <p>El Gobierno de Chile y las autoridades regionales ofrecen diversos programas para facilitar el acceso a estas tecnologías. Infórmate sobre:</p>
+                <ul>
+                    <li><strong>Parque Solar Comunitario:</strong> Iniciativa que beneficia a comunidades en San Pedro de la Paz, Santa Juana y Santa Bárbara.</li>
+                    <li><strong>Programa Casa Solar:</strong> Ofrece cofinanciamiento para instalaciones residenciales. ¡Mantente atento a las nuevas convocatorias para el Biobío!</li>
+                    <li><strong>Fondo de Acceso a la Energía (FAE):</strong> Apoya a organizaciones comunitarias, especialmente en zonas rurales.</li>
+                    <li><strong>Subsidios SERVIU:</strong> Programas habitacionales que han entregado miles de subsidios para sistemas solares en la región.</li>
+                </ul>
+
+                <h3>Encuentra un Instalador Certificado por la SEC</h3>
+                <p><strong>¡Importante!</strong> Para garantizar la seguridad, la calidad y poder inyectar tu energía sobrante a la red (Net-Billing), tu instalación debe ser realizada por un profesional o empresa certificada por la Superintendencia de Electricidad y Combustibles (SEC). Exige siempre el certificado TE4 de tu instalación.</p>
+
+                <div class="installer-directory">
+                    <div class="installer-card">
+                        <h4>Sustento Solar</h4>
+                        <p>Empresa especialista en energía solar con sede en Concepción y más de 12 años de experiencia en la región.</p>
+                        <div class="installer-actions">
+                            <a href="https://wlhttp.sec.cl/buscadorinstaladores/buscador.do" target="_blank" class="btn btn-secondary">Verificar SEC</a>
+                            <a href="https://sustentosolar.cl/" target="_blank" class="btn btn-primary">Sitio Web</a>
+                        </div>
+                    </div>
+                    <div class="installer-card">
+                        <h4>Heliplast</h4>
+                        <p>Compañía chileno-alemana con más de 40 años de trayectoria y proyectos a lo largo de todo Chile, incluyendo la Región del Biobío.</p>
+                        <div class="installer-actions">
+                            <a href="https://wlhttp.sec.cl/buscadorinstaladores/buscador.do" target="_blank" class="btn btn-secondary">Verificar SEC</a>
+                            <a href="https://heliplast.cl/" target="_blank" class="btn btn-primary">Sitio Web</a>
+                        </div>
+                    </div>
+                    <div class="installer-card">
+                        <h4>Geotermika</h4>
+                        <p>Pioneros en geotermia residencial y comercial en el sur de Chile, con más de 400 instalaciones realizadas en el país.</p>
+                        <div class="installer-actions">
+                            <a href="https://wlhttp.sec.cl/buscadorinstaladores/buscador.do" target="_blank" class="btn btn-secondary">Verificar SEC</a>
+                            <a href="https://geotermika.cl/" target="_blank" class="btn btn-primary">Sitio Web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 Transición Energética Hogareña. Un recurso para un futuro sostenible.</p>
+    </div>
+</footer>
+
+<script src="observer.js"></script>
+</body>
+</html>
