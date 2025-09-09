@@ -2,7 +2,7 @@
 /* PROPIEDADES PERSONALIZADAS (VARIABLES) */
 /* ------------------- */
 :root {
-    --clr-primary-green: #1aac25;   /* Verde bosque */
+    --clr-primary-green: #18631e;   /* Verde bosque */
     --clr-accent-sun: #00C853;     /* Verde brillante */
     --clr-accent-wind: #0288D1;    /* Azul viento */
     --clr-accent-earth: #4E342E;   /* Marrón tierra suave */
@@ -502,7 +502,7 @@ html, body {
 /* SECCIÓN DE CIERRE */
 /* ------------------- */
 .closing-section {
-    background: linear-gradient(135deg, var(--clr-primary-green), var(--clr-accent-wind));
+    background: linear-gradient(135deg, var(--clr-accent-sun), var(--clr-accent-wind));
     color: var(--clr-white);
     text-align: center;
     padding-block: var(--spacing-xl);
@@ -571,4 +571,5 @@ html, body {
         padding-inline: 1rem;
     }
 }
+
 
