@@ -98,39 +98,6 @@ li { margin-bottom: var(--spacing-sm); }
     transform: translateY(0);
 }
 
-/* ------------------- */
-/* SECCIÓN HÉROE */
-/* ------------------- */
-.hero-section {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    padding: var(--spacing-lg);
-    text-align: center;
-    color: var(--clr-white);
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(45deg, #1B5E20, #0288D1, #00C853);
-    background-size: 400% 400%;
-    animation: animated-gradient 15s ease infinite;
-}
-@keyframes animated-gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-.hero-content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-md);
-}
-.hero-content h1 {
-    color: var(--clr-white);
-    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4); /* más sutil */
-}
 
 .hero-content .subtitle {
     font-size: clamp(1.2rem, 2vw + 0.5rem, 1.8rem);
@@ -395,5 +362,140 @@ li { margin-bottom: var(--spacing-sm); }
         display: none;
     }
 }
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .4;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+.bg3 {
+    animation-duration: 5s;
+}
 
+@keyframes slide {
+    0%   { transform: translateX(-25%); }
+    100% { transform: translateX(25%); }
+}
+/* ------------------- */
+/* EFECTO FONDO DESLIZANTE PRINCIPAL */
+/* ------------------- */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-25%); }
+    100% { transform: translateX(25%); }
+}
+
+/* ------------------- */
+/* AJUSTE HERO (ya no necesita fondo propio) */
+/* ------------------- */
+.hero-section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--clr-white);
+    position: relative;
+    overflow: hidden;
+    /* fondo degradado eliminado */
+    background: none;
+}
+.hero-content h1,
+.hero-content .subtitle {
+    color: var(--clr-white);
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* ------------------- */
+/* OPCIONAL: overlay blanco para secciones */
+/* ------------------- */
+/* efecto máquina de escribir */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;         /* evita que baje de línea */
+    margin: 0 auto;
+    letter-spacing: .05em;
+    display: inline-block;       /* para que funcione mejor en móvil */
+    max-width: 100%;             /* no se pasa en pantallas chicas */
+    animation: typing 3s steps(30, end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+.typewriter.subtitle {
+    animation: typing-sub 3s steps(30, end) forwards,
+    blink-caret .75s step-end infinite;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+
+/* animaciones */
+@keyframes typing {
+    from { width: 0; }
+    to   { width: 100%; border-right: none; }
+}
+
+@keyframes typing-sub {
+    from { width: 0; opacity: 1; }
+    to   { width: 100%; opacity: 1; border-right: none; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+/* ------------------- */
+/* RESPONSIVE */
+/* ------------------- */
+@media (max-width: 768px) {
+    .hero-content h1.typewriter {
+        font-size: 1.8rem;
+    }
+    .hero-content .subtitle.typewriter {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1.typewriter {
+        font-size: 1.5rem;
+        letter-spacing: .03em; /* más compacto */
+    }
+    .hero-content .subtitle.typewriter {
+        font-size: 0.9rem;
+    }
+}
 
