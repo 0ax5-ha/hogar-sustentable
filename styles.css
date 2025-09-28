@@ -299,6 +299,8 @@ li { margin-bottom: var(--spacing-sm); }
 html, body {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;   /* evita scroll horizontal */
+    overflow-y: auto;
 }
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
@@ -437,3 +439,4 @@ html, body {
     .hero-content .subtitle.typewriter { font-size: 0.9rem; }
     .closing-section p { font-size: 1rem; padding-inline: 1rem; }
 }
+
