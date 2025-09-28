@@ -11,9 +11,8 @@
     --clr-white: #FFFFFF;
     --clr-section-bg: #E3F2FD;     /* Azul suave para secciones */
 
-        --ff-heading: 'Poppins', sans-serif;  /* Nueva fuente clara y moderna */
-        --ff-body: 'Roboto', sans-serif;
-
+    --ff-heading: 'Poppins', sans-serif;
+    --ff-body: 'Roboto', sans-serif;
 
     --fs-h1: clamp(2.5rem, 5vw + 1rem, 4.5rem);
     --fs-h2: clamp(2rem, 4vw + 1rem, 3.5rem);
@@ -98,7 +97,6 @@ li { margin-bottom: var(--spacing-sm); }
     transform: translateY(0);
 }
 
-
 .hero-content .subtitle {
     font-size: clamp(1.2rem, 2vw + 0.5rem, 1.8rem);
     font-weight: 300;
@@ -163,30 +161,6 @@ li { margin-bottom: var(--spacing-sm); }
 #wind-card h3 { color: var(--clr-accent-wind); }
 #geo-card h3 { color: var(--clr-accent-earth); }
 .solution-content { padding: var(--spacing-lg); }
-
-/* Detalles con summary */
-.solution-details {
-    margin-top: var(--spacing-md);
-}
-.solution-details summary {
-    display: inline-block;
-    padding: var(--spacing-sm) var(--spacing-md);
-    background-color: var(--clr-primary-green);
-    color: var(--clr-white);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color var(--transition-fast);
-    list-style: none;
-}
-.solution-details summary:hover {
-    background-color: #0D3B12;
-}
-.solution-details summary::-webkit-details-marker {
-    display: none;
-}
-.solution-details summary::after { content: ' Ver más'; }
-.solution-details[open] summary::after { content: ' Ocultar'; }
-.details-content { padding-top: var(--spacing-md); }
 
 /* ------------------- */
 /* SECCIÓN COMPARATIVA */
@@ -318,81 +292,14 @@ li { margin-bottom: var(--spacing-sm); }
     padding: var(--spacing-lg) var(--spacing-md);
     font-size: 0.9rem;
 }
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    body {
-        font-size: 1rem;
-    }
-    section {
-        padding-inline: 1rem;
-        padding-block: 2rem;
-    }
-    .hero-section {
-        padding: 2rem 1rem;
-        min-height: 70vh;
-    }
-    .hero-content .subtitle {
-        font-size: 1rem;
-        max-width: 90%;
-    }
-    .benefits-grid,
-    .solutions-container,
-    .installer-directory {
-        grid-template-columns: 1fr; /* una columna en celular */
-    }
-}
-@media (max-width: 480px) {
-    .solution-card,
-    .benefit-card,
-    .installer-card {
-        padding: 1rem;
-    }
-    .btn-primary, .btn-secondary {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-    }
-}
-@media (max-width: 480px) {
-    .hero-icon-container {
-        display: none;
-    }
-}
-.bg {
-    animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-    bottom: 0;
-    left: -50%;
-    opacity: .4;
-    position: fixed;
-    right: -50%;
-    top: 0;
-    z-index: -1;
-}
-.bg2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 4s;
-}
-.bg3 {
-    animation-duration: 5s;
-}
 
-@keyframes slide {
-    0%   { transform: translateX(-25%); }
-    100% { transform: translateX(25%); }
-}
 /* ------------------- */
-/* EFECTO FONDO DESLIZANTE PRINCIPAL */
+/* EFECTO FONDO DESLIZANTE */
 /* ------------------- */
 html, body {
     height: 100%;
     margin: 0;
 }
-
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
@@ -404,13 +311,8 @@ html, body {
     top: 0;
     z-index: -1;
 }
-.bg2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 4s;
-}
-.bg3 {
-    animation-duration: 5s;
-}
+.bg2 { animation-direction: alternate-reverse; animation-duration: 4s; }
+.bg3 { animation-duration: 5s; }
 
 @keyframes slide {
     0% { transform: translateX(-25%); }
@@ -418,7 +320,7 @@ html, body {
 }
 
 /* ------------------- */
-/* AJUSTE HERO (ya no necesita fondo propio) */
+/* HERO */
 /* ------------------- */
 .hero-section {
     display: grid;
@@ -429,7 +331,6 @@ html, body {
     color: var(--clr-white);
     position: relative;
     overflow: hidden;
-    /* fondo degradado eliminado */
     background: none;
 }
 .hero-content h1,
@@ -438,66 +339,53 @@ html, body {
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* ------------------- */
-/* OPCIONAL: overlay blanco para secciones */
-/* ------------------- */
 /* efecto máquina de escribir */
 .typewriter {
     overflow: hidden;
     border-right: .15em solid #fff;
-    white-space: nowrap;         /* evita que baje de línea */
+    white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .05em;
-    display: inline-block;       /* para que funcione mejor en móvil */
-    max-width: 100%;             /* no se pasa en pantallas chicas */
+    display: inline-block;
+    max-width: 100%;
     animation: typing 3s steps(30, end) forwards,
     blink-caret .75s step-end infinite;
 }
-
 .typewriter.subtitle {
     animation: typing-sub 3s steps(30, end) forwards,
     blink-caret .75s step-end infinite;
     animation-delay: 3.5s;
     opacity: 0;
 }
-
-/* animaciones */
-@keyframes typing {
-    from { width: 0; }
-    to   { width: 100%; border-right: none; }
-}
-
-@keyframes typing-sub {
-    from { width: 0; opacity: 1; }
-    to   { width: 100%; opacity: 1; border-right: none; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #fff; }
-}
+@keyframes typing { from { width: 0; } to { width: 100%; border-right: none; } }
+@keyframes typing-sub { from { width: 0; opacity: 1; } to { width: 100%; opacity: 1; border-right: none; } }
+@keyframes blink-caret { from, to { border-color: transparent; } 50% { border-color: #fff; } }
 
 /* ------------------- */
-/* RESPONSIVE */
+/* FLECHA SCROLL-DOWN */
 /* ------------------- */
-@media (max-width: 768px) {
-    .hero-content h1.typewriter {
-        font-size: 1.8rem;
-    }
-    .hero-content .subtitle.typewriter {
-        font-size: 1rem;
-    }
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.scroll-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-left: 3px solid var(--clr-white);
+    border-bottom: 3px solid var(--clr-white);
+    transform: rotate(-45deg);
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) rotate(-45deg) translateY(0); }
+    40% { transform: translateX(-50%) rotate(-45deg) translateY(10px); }
+    60% { transform: translateX(-50%) rotate(-45deg) translateY(5px); }
 }
 
-@media (max-width: 480px) {
-    .hero-content h1.typewriter {
-        font-size: 1.5rem;
-        letter-spacing: .03em; /* más compacto */
-    }
-    .hero-content .subtitle.typewriter {
-        font-size: 0.9rem;
-    }
-}
 /* ------------------- */
 /* SECCIÓN DE CIERRE */
 /* ------------------- */
@@ -509,14 +397,12 @@ html, body {
     position: relative;
     overflow: hidden;
 }
-
 .closing-section h2 {
     font-size: var(--fs-h2);
     color : var(--clr-white);
     margin-bottom: var(--spacing-md);
     text-shadow: 1px 2px 6px rgba(0,0,0,0.3);
 }
-
 .closing-section p {
     max-width: 800px;
     margin: 0 auto;
@@ -526,11 +412,28 @@ html, body {
     animation: fadeInUp 2s ease both;
 }
 
-/* Mobile tweaks */
-@media (max-width: 480px) {
-    .closing-section p {
-        font-size: 1rem;
-        padding-inline: 1rem;
-    }
+/* ------------------- */
+/* RESPONSIVE */
+/* ------------------- */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    body { font-size: 1rem; }
+    section { padding-inline: 1rem; padding-block: 2rem; }
+    .hero-section { padding: 2rem 1rem; min-height: 70vh; }
+    .hero-content .subtitle { font-size: 1rem; max-width: 90%; }
+    .benefits-grid,
+    .solutions-container,
+    .installer-directory { grid-template-columns: 1fr; }
+    .hero-content h1.typewriter { font-size: 1.8rem; }
+    .hero-content .subtitle.typewriter { font-size: 1rem; }
 }
-
+@media (max-width: 480px) {
+    .solution-card,
+    .benefit-card,
+    .installer-card { padding: 1rem; }
+    .btn-primary, .btn-secondary { font-size: 0.9rem; padding: 0.6rem 1rem; }
+    .hero-content h1.typewriter { font-size: 1.5rem; letter-spacing: .03em; }
+    .hero-content .subtitle.typewriter { font-size: 0.9rem; }
+    .closing-section p { font-size: 1rem; padding-inline: 1rem; }
+}
