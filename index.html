@@ -1,174 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Energías Renovables en el Hogar</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogares Sustentables | El Futuro es Renovable</title>
+    <meta name="description" content="Una guía sobre cómo lograr un hogar sustentable mediante energías renovables, eficiencia energética y acciones cotidianas.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Fondo animado -->
-  <div class="bg"></div>
-  <div class="bg bg2"></div>
-  <div class="bg bg3"></div>
-
-  <!-- Hero -->
-  <header class="hero-section">
-    <div class="hero-content">
-      <h1 class="typewriter">Energías Renovables en el Hogar</h1>
-      <p class="subtitle typewriter">Construyendo un futuro más limpio y sostenible</p>
-    </div>
-    <a href="#benefits" class="scroll-down"><span></span></a>
-  </header>
-
-  <!-- Beneficios -->
-  <section id="benefits" class="benefits-section animate-on-scroll">
-    <div class="container">
-      <h2>Beneficios de las Energías Renovables</h2>
-      <ul>
-        <li>Reducción de la huella de carbono.</li>
-        <li>Ahorro económico a largo plazo en cuentas de electricidad.</li>
-        <li>Independencia energética frente a las empresas distribuidoras.</li>
-        <li>Revalorización de la vivienda al incorporar tecnologías verdes.</li>
-        <li>Contribución activa a la lucha contra el cambio climático.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Soluciones en el hogar -->
-  <section id="solutions" class="solutions-section animate-on-scroll">
-    <div class="container">
-      <h2>Soluciones Disponibles para el Hogar</h2>
-      <div class="solutions-container">
-        <div class="solution-card" id="solar-card">
-          <h3>Energía Solar</h3>
-          <p>La energía solar fotovoltaica convierte la radiación del sol en electricidad. Se usa ampliamente en hogares gracias a paneles que pueden instalarse en techos o jardines. España y Chile destacan como líderes en instalaciones solares domésticas.</p>
-          <ul>
-            <li><b>Ventajas:</b> Amplia disponibilidad del recurso, bajos costos de mantención.</li>
-            <li><b>Desventajas:</b> Requiere buena radiación solar y una inversión inicial alta.</li>
-          </ul>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<main>
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="typewriter">El Futuro es Renovable</h1>
+            <p class="subtitle typewriter">Tu Hogar es el Comienzo.</p>
         </div>
-
-        <div class="solution-card" id="wind-card">
-          <h3>Energía Eólica</h3>
-          <p>El viento genera electricidad a través de aerogeneradores. A nivel doméstico se utilizan turbinas pequeñas, especialmente en zonas rurales o costeras. Alemania y Dinamarca lideran en su implementación.</p>
-          <ul>
-            <li><b>Ventajas:</b> Genera energía de noche y en días nublados, complementando la solar.</li>
-            <li><b>Desventajas:</b> No siempre es viable en zonas urbanas por espacio y ruido.</li>
-          </ul>
+        <!-- Flecha scroll -->
+        <div class="scroll-down">
+            <a href="#benefits"><span></span></a>
         </div>
+    </section>
 
-        <div class="solution-card" id="geo-card">
-          <h3>Energía Geotérmica</h3>
-          <p>Usa el calor interno de la Tierra para calefacción y agua caliente sanitaria. En Islandia se utiliza masivamente para abastecer hogares, y en Chile se estudian sus posibilidades en la zona sur.</p>
-          <ul>
-            <li><b>Ventajas:</b> Estable durante todo el año, ideal para climas fríos.</li>
-            <li><b>Desventajas:</b> Costosa de implementar y depende de la geología local.</li>
-          </ul>
+    <!-- BENEFICIOS -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2>¿Por Qué Cambiar a un Hogar Sustentable?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll">
+                    <h3>Ahorro Económico</h3>
+                    <p>Con medidas simples como ampolletas LED, grifos eficientes y el buen uso de la luz natural, puedes reducir gastos de energía y agua.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <h3>Independencia Energética</h3>
+                    <p>Con paneles solares u otras tecnologías, puedes generar tu propia energía y protegerte de los precios de la red.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.4s;">
+                    <h3>Impacto Ambiental</h3>
+                    <p>Separar residuos, ahorrar agua y preferir energías limpias disminuye la huella de carbono y contribuye a un planeta más sano.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="solution-card" id="hydro-card">
-          <h3>Energía Hidroeléctrica Doméstica</h3>
-          <p>En viviendas cercanas a ríos o canales, se pueden instalar microturbinas hidráulicas. Son comunes en comunidades rurales de países como Canadá y Perú.</p>
-          <ul>
-            <li><b>Ventajas:</b> Generación constante y confiable.</li>
-            <li><b>Desventajas:</b> Limitada solo a hogares cercanos a cursos de agua.</li>
-          </ul>
+    <!-- SOLUCIONES -->
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <h2>Soluciones y Acciones para Tu Hogar</h2>
+            <div class="solutions-container">
+                <article class="solution-card animate-on-scroll" id="daily-card">
+                    <header class="solution-header">
+                        <h3>Acciones Cotidianas</h3>
+                    </header>
+                    <div class="solution-content">
+                        <ul>
+                            <li>Apagar luces y aparatos cuando no se usan.</li>
+                            <li>Usar ampolletas LED de bajo consumo.</li>
+                            <li>Cerrar la llave mientras te cepillas los dientes.</li>
+                            <li>Instalar grifos ahorradores de agua.</li>
+                            <li>Separar residuos para reciclar.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="solution-card animate-on-scroll" id="solar-card">
+                    <header class="solution-header">
+                        <h3>Energía Solar Fotovoltaica</h3>
+                    </header>
+                    <div class="solution-content">
+                        <p>Convierte la luz del sol directamente en electricidad para tu hogar.</p>
+                        <h4>Ventajas:</h4>
+                        <ul>
+                            <li>Ahorro eléctrico a largo plazo.</li>
+                            <li>Bajo mantenimiento y larga vida útil.</li>
+                        </ul>
+                        <h4>Desventajas:</h4>
+                        <ul>
+                            <li>Costo inicial moderado a alto.</li>
+                            <li>Dependencia del sol.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="solution-card animate-on-scroll" id="wind-card" style="transition-delay: 0.2s;">
+                    <header class="solution-header">
+                        <h3>Energía Eólica Doméstica</h3>
+                    </header>
+                    <div class="solution-content">
+                        <p>Ideal para zonas rurales o con vientos constantes.</p>
+                        <h4>Ventajas:</h4>
+                        <ul>
+                            <li>Genera energía día y noche.</li>
+                            <li>Complemento perfecto de la solar.</li>
+                        </ul>
+                        <h4>Desventajas:</h4>
+                        <ul>
+                            <li>Requiere espacio y vientos constantes.</li>
+                            <li>Posible impacto acústico y visual.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="solution-card animate-on-scroll" id="geo-card" style="transition-delay: 0.4s;">
+                    <header class="solution-header">
+                        <h3>Energía Geotérmica</h3>
+                    </header>
+                    <div class="solution-content">
+                        <p>Usa la temperatura estable de la tierra para calefacción y refrigeración.</p>
+                        <h4>Ventajas:</h4>
+                        <ul>
+                            <li>Máxima eficiencia (ahorros de hasta 80%).</li>
+                            <li>Bajo mantenimiento.</li>
+                        </ul>
+                        <h4>Desventajas:</h4>
+                        <ul>
+                            <li>Inversión inicial muy alta.</li>
+                            <li>Requiere terreno.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Nueva sección: Almacenamiento -->
-  <section id="storage" class="comparison-section animate-on-scroll">
+    <!-- COMPARACIÓN -->
+    <section id="comparison" class="comparison-section">
+        <div class="container">
+            <h2>Análisis Comparativo</h2>
+            <div class="table-container animate-on-scroll">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Acciones Cotidianas</th>
+                            <th>Solar</th>
+                            <th>Eólica</th>
+                            <th>Geotérmica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costo Inicial</td>
+                            <td>Muy Bajo</td>
+                            <td>Moderado</td>
+                            <td>Alto</td>
+                            <td>Muy Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Ahorro a Largo Plazo</td>
+                            <td>Medio</td>
+                            <td>Muy Alto</td>
+                            <td>Alto</td>
+                            <td>El más Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Impacto Ambiental</td>
+                            <td>Alto</td>
+                            <td>Alto</td>
+                            <td>Alto</td>
+                            <td>Muy Alto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: CONSEJOS -->
+    <section id="tips" class="benefits-section">
+        <div class="container">
+            <h2>Consejos Prácticos para un Hogar Sustentable</h2>
+            <ul>
+                <li>Aprovecha al máximo la luz natural con cortinas abiertas y paredes claras.</li>
+                <li>Desconecta cargadores y aparatos que no uses.</li>
+                <li>Reutiliza agua de la lavadora para regar o limpiar.</li>
+                <li>Compra electrodomésticos con eficiencia energética A+++.</li>
+                <li>Planta árboles alrededor de tu casa para mejorar sombra y clima.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: MITOS -->
+    <section id="myths" class="solutions-section">
+        <div class="container">
+            <h2>Mitos y Realidades</h2>
+            <div class="solutions-container">
+                <article class="solution-card">
+                    <h3>❌ “Ser sustentable es muy caro”</h3>
+                    <p>✅ Falso. Hay muchas medidas gratuitas o de bajo costo como apagar luces, cerrar la llave o reciclar.</p>
+                </article>
+                <article class="solution-card">
+                    <h3>❌ “El reciclaje no sirve de nada”</h3>
+                    <p>✅ Falso. Cada tonelada de papel reciclado ahorra 17 árboles y miles de litros de agua.</p>
+                </article>
+                <article class="solution-card">
+                    <h3>❌ “Las energías renovables no funcionan en Chile”</h3>
+                    <p>✅ Falso. Chile tiene uno de los mejores potenciales solares y eólicos del mundo.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUÍA LOCAL -->
+    <section id="local-guide" class="local-guide-section">
+        <div class="container">
+            <div class="local-guide-content animate-on-scroll">
+                <h2>Guía Práctica: Energías Renovables en Concepción y el Biobío</h2>
+                <p>La transición a energías limpias es una realidad en nuestra región. Aquí encontrarás datos útiles para dar el primer paso.</p>
+                <h3>Incentivos y Programas</h3>
+                <ul>
+                    <li><strong>Programa Casa Solar:</strong> cofinanciamiento para instalaciones residenciales.</li>
+                    <li><strong>Fondo de Acceso a la Energía (FAE):</strong> apoya a comunidades rurales.</li>
+                    <li><strong>Subsidios SERVIU:</strong> para hogares con sistemas solares integrados.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENCUESTA -->
+    <section id="survey" class="survey-section">
+        <div class="container">
+            <h2>Nuestra Encuesta</h2>
+            <p>Aplicamos una encuesta a estudiantes del Liceo Polivalente La Frontera sobre hábitos de ahorro de agua, energía y reciclaje.</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScZYVJ3ojp1z6BA7MyHG6Zf6HLWwfYt7T346tAt0nmYbBx_Ew/viewform?usp=header" target="_blank" class="btn btn-primary">Ver Encuesta</a></p>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: FUTURO -->
+    <section id="future" class="comparison-section">
+        <div class="container">
+            <h2>El Futuro de la Energía en Chile</h2>
+            <p>Chile se ha propuesto que para el 2040, gran parte de la energía provenga de fuentes renovables. 
+               La Región del Biobío será clave gracias a su potencial solar, eólico e hidráulico.</p>
+            <p>Con pequeños cambios en nuestros hogares, ayudamos a que este futuro llegue más rápido.</p>
+        </div>
+    </section>
+</main>
+
+<!-- CONCLUSIÓN -->
+<section class="closing-section animate-on-scroll">
     <div class="container">
-      <h2>Almacenamiento de Energía</h2>
-      <p>Para aprovechar mejor las energías renovables, se utilizan baterías domésticas como las de litio. Estas permiten guardar la electricidad sobrante durante el día y usarla en la noche. Tesla Powerwall y soluciones locales en Chile son ejemplos destacados.</p>
+        <h2>Conclusión</h2>
+        <p>
+            Nuestra campaña busca <strong>concientizar mediante exposiciones y presentaciones</strong> 
+            que motiven a la comunidad estudiantil a realizar cambios reales. 
+            Recordemos: cada acción cuenta, desde apagar una luz hasta instalar un panel solar.
+        </p>
     </div>
-  </section>
+</section>
 
-  <!-- Nueva sección: Retos -->
-  <section id="challenges" class="solutions-section animate-on-scroll">
-    <div class="container">
-      <h2>Desafíos de las Energías Renovables en el Hogar</h2>
-      <ul>
-        <li>Altos costos iniciales de instalación.</li>
-        <li>Dependencia de subsidios o financiamiento estatal en algunos países.</li>
-        <li>Necesidad de mayor educación energética para los usuarios.</li>
-        <li>Espacio limitado en entornos urbanos densos.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Casos reales -->
-  <section id="cases" class="comparison-section animate-on-scroll">
-    <div class="container">
-      <h2>Casos Reales en el Mundo</h2>
-      <p>Las energías renovables en el hogar ya son una realidad en muchos países:</p>
-      <ul>
-        <li><b>Chile:</b> Programas de paneles solares en viviendas sociales en el norte del país.</li>
-        <li><b>Alemania:</b> Incentivos estatales han permitido la masificación de techos solares.</li>
-        <li><b>Islandia:</b> Uso casi total de geotermia para calefacción y agua caliente.</li>
-        <li><b>España:</b> Avances en autoconsumo fotovoltaico tras el fin del “impuesto al sol”.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Comparación -->
-  <section id="comparison" class="comparison-section animate-on-scroll">
-    <div class="container">
-      <h2>Comparación de Opciones</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Fuente</th>
-            <th>Costo Inicial</th>
-            <th>Mantenimiento</th>
-            <th>Producción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Solar</td>
-            <td>Alto</td>
-            <td>Bajo</td>
-            <td>Alta en climas soleados</td>
-          </tr>
-          <tr>
-            <td>Eólica</td>
-            <td>Medio</td>
-            <td>Medio</td>
-            <td>Variable, depende del viento</td>
-          </tr>
-          <tr>
-            <td>Geotérmica</td>
-            <td>Muy alto</td>
-            <td>Bajo</td>
-            <td>Estable todo el año</td>
-          </tr>
-          <tr>
-            <td>Hidroeléctrica</td>
-            <td>Medio</td>
-            <td>Bajo</td>
-            <td>Constante si hay flujo de agua</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Cierre -->
-  <section class="closing-section animate-on-scroll">
-    <div class="container">
-      <h2>Un Futuro Renovable en Cada Hogar</h2>
-      <p>La transición energética depende de acciones colectivas e individuales. Adaptar nuestros hogares a energías renovables no solo reduce costos a largo plazo, sino que también construye un planeta más saludable para las próximas generaciones.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>Proyecto desarrollado por Juan Pérez, María González y Carlos Ramírez.</p>
-    <p>&copy; 2025 Energías Renovables en el Hogar</p>
-  </footer>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>
+    Página realizada por <strong>Maximiliano Sanfuentes</strong>, 
+    <strong>Bastián Rodríguez</strong> y <strong>Bastián Jori</strong>  
+    como parte del proyecto escolar "Hogares Sustentables".
+  </p>
+  <p>&copy; 2025 Todos los derechos reservados.</p>
+</footer>
+<script src="observer.js"></script>
 </body>
 </html>
