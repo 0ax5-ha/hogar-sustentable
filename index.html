@@ -1,241 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogares Sustentables | El Futuro es Renovable</title>
-    <meta name="description" content="Una guía infográfica sobre cómo implementar energías solar, eólica, geotérmica e hidráulica en tu hogar para un futuro más sostenible y económico.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energías Renovables en el Hogar</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<div class="bg"></div>
-<div class="bg bg2"></div>
-<div class="bg bg3"></div>
+  <!-- Fondo animado -->
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
 
-<main>
-    <!-- HERO -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1 class="typewriter">El Futuro es Renovable</h1>
-            <p class="subtitle typewriter">Tu Hogar es el Comienzo</p>
-        </div>
-        <div class="scroll-down">
-            <a href="#benefits"><span></span></a>
-        </div>
-    </section>
-
-    <!-- BENEFICIOS -->
-    <section id="benefits" class="benefits-section">
-        <div class="container">
-            <h2>Beneficios de un Hogar Sustentable</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card animate-on-scroll">
-                    <h3>Ahorro Económico</h3>
-                    <p>Reduce drásticamente tu factura de electricidad, con ahorros de hasta un <span class="counter" data-target="80">0</span>% en climatización y consumo de agua.</p>
-                </div>
-                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.2s;">
-                    <h3>Salud y Bienestar</h3>
-                    <p>Ambientes con luz natural, buena ventilación y menos contaminantes mejoran la calidad de vida.</p>
-                </div>
-                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.4s;">
-                    <h3>Impacto Ambiental</h3>
-                    <p>Disminuye la huella de carbono de tu hogar y contribuye a un planeta más sano.</p>
-                </div>
-                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.6s;">
-                    <h3>Independencia Energética</h3>
-                    <p>Genera tu propia energía con tecnologías como paneles solares, turbinas eólicas o sistemas hidroeléctricos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOLUCIONES ENERGÉTICAS -->
-    <section id="solutions" class="solutions-section">
-        <div class="container">
-            <h2>Soluciones Energéticas para Tu Hogar</h2>
-            <div class="solutions-container">
-                <article class="solution-card animate-on-scroll" id="solar-card">
-                    <header class="solution-header">
-                        <h3>Energía Solar Fotovoltaica</h3>
-                    </header>
-                    <div class="solution-content">
-                        <p>Convierte la luz del sol en electricidad. Es la opción más popular y eficiente en muchas regiones de Chile.</p>
-                        <div class="details-panel">
-                            <h4>¿Cómo funciona?</h4>
-                            <p>Los paneles capturan fotones, generando corriente continua (CC). Un inversor la convierte en corriente alterna (CA) para uso doméstico.</p>
-                            <h4>Ventajas:</h4>
-                            <ul>
-                                <li>Reducción significativa de la factura eléctrica.</li>
-                                <li>Mantenimiento casi nulo y larga vida útil (>25 años).</li>
-                                <li>Aumenta el valor de la propiedad.</li>
-                            </ul>
-                            <h4>Desventajas:</h4>
-                            <ul>
-                                <li>Costo inicial considerable.</li>
-                                <li>Dependencia de la radiación solar.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="solution-card animate-on-scroll" id="wind-card" style="transition-delay: 0.2s;">
-                    <header class="solution-header">
-                        <h3>Energía Eólica Doméstica</h3>
-                    </header>
-                    <div class="solution-content">
-                        <p>Ideal para zonas rurales o costeras con vientos constantes, generando energía día y noche.</p>
-                        <div class="details-panel">
-                            <h4>¿Cómo funciona?</h4>
-                            <p>El viento hace girar las aspas de un aerogenerador, lo que acciona una turbina que produce electricidad.</p>
-                            <h4>Ventajas:</h4>
-                            <ul>
-                                <li>Generación 24/7 si hay viento.</li>
-                                <li>Excelente complemento para la energía solar.</li>
-                            </ul>
-                            <h4>Desventajas:</h4>
-                            <ul>
-                                <li>Requiere vientos constantes y espacio abierto.</li>
-                                <li>Impacto acústico y visual.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="solution-card animate-on-scroll" id="geo-card" style="transition-delay: 0.4s;">
-                    <header class="solution-header">
-                        <h3>Energía Geotérmica</h3>
-                    </header>
-                    <div class="solution-content">
-                        <p>La solución más eficiente para climatización, usando la temperatura estable de la tierra.</p>
-                        <div class="details-panel">
-                            <h4>¿Cómo funciona?</h4>
-                            <p>Una bomba de calor transfiere el calor del subsuelo a la casa en invierno, y viceversa en verano.</p>
-                            <h4>Ventajas:</h4>
-                            <ul>
-                                <li>Ahorros de hasta un 80%.</li>
-                                <li>Sirve para calefacción, refrigeración y agua caliente.</li>
-                            </ul>
-                            <h4>Desventajas:</h4>
-                            <ul>
-                                <li>Inversión inicial muy alta.</li>
-                                <li>Requiere terreno para instalación.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="solution-card animate-on-scroll" id="hydro-card" style="transition-delay: 0.6s;">
-                    <header class="solution-header">
-                        <h3>Microhidroelectricidad</h3>
-                    </header>
-                    <div class="solution-content">
-                        <p>En viviendas cercanas a cursos de agua, se pueden instalar turbinas que generan electricidad constante.</p>
-                        <div class="details-panel">
-                            <h4>Ventajas:</h4>
-                            <ul>
-                                <li>Generación continua mientras fluya el agua.</li>
-                                <li>Bajo impacto visual.</li>
-                            </ul>
-                            <h4>Desventajas:</h4>
-                            <ul>
-                                <li>Requiere cercanía a cursos de agua.</li>
-                                <li>Instalación especializada.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ANÁLISIS COMPARATIVO -->
-    <section id="comparison" class="comparison-section">
-        <div class="container">
-            <h2>Análisis Comparativo</h2>
-            <div class="table-container animate-on-scroll">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Característica</th>
-                            <th>Solar</th>
-                            <th>Eólica</th>
-                            <th>Geotérmica</th>
-                            <th>Microhidro</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Costo Inicial</td>
-                            <td>Moderado a Alto</td>
-                            <td>Alto</td>
-                            <td>Muy Alto</td>
-                            <td>Variable</td>
-                        </tr>
-                        <tr>
-                            <td>Ahorro a Largo Plazo</td>
-                            <td>Muy Alto</td>
-                            <td>Alto</td>
-                            <td>El más Alto</td>
-                            <td>Alto</td>
-                        </tr>
-                        <tr>
-                            <td>Mantenimiento</td>
-                            <td>Muy Bajo</td>
-                            <td>Bajo a Moderado</td>
-                            <td>Muy Bajo</td>
-                            <td>Bajo</td>
-                        </tr>
-                        <tr>
-                            <td>Limitaciones</td>
-                            <td>Depende del sol</td>
-                            <td>Depende del viento</td>
-                            <td>Inversión alta</td>
-                            <td>Necesita agua cercana</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- FUTURO ENERGÉTICO -->
-    <section id="future" class="comparison-section">
-        <div class="container">
-            <h2>El Futuro de la Energía en Chile</h2>
-            <p>Chile se ha propuesto que para el 2040, gran parte de la energía provenga de fuentes renovables. La Región del Biobío será clave gracias a su potencial solar, eólico e hidráulico.</p>
-            <p>Con pequeños cambios en nuestros hogares, ayudamos a que este futuro llegue más rápido.</p>
-        </div>
-    </section>
-
-    <!-- GUÍA LOCAL -->
-    <section id="local-guide" class="local-guide-section">
-        <div class="container">
-            <div class="local-guide-content animate-on-scroll">
-                <h2>Guía Práctica: Energías Renovables en Concepción y la Región del Biobío</h2>
-                <p>La transición a energías limpias es una realidad viable en nuestra región. Aquí encontrarás información clave para dar el siguiente paso.</p>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- CONCLUSIÓN -->
-<section class="closing-section animate-on-scroll">
-    <div class="container">
-        <h2>Conclusión</h2>
-        <p>Con hábitos responsables y el uso de tecnologías limpias, cada hogar puede convertirse en un espacio sustentable. Recordemos: cada acción cuenta, desde apagar una luz hasta instalar un panel solar. Tu hogar puede ser el inicio de un cambio mayor.</p>
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1 class="typewriter">Energías Renovables en el Hogar</h1>
+      <p class="subtitle typewriter">Soluciones sostenibles para un futuro mejor</p>
     </div>
-</section>
+    <div class="scroll-down"><span></span></div>
+  </header>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-    <p>Página realizada por <strong>Maximiliano Sanfuentes</strong>, <strong>Bastián Rodríguez</strong> y <strong>Bastián Jori</strong> como parte del proyecto escolar "Hogares Sustentables".</p>
-    <p>&copy; 2025 Todos los derechos reservados.</p>
-</footer>
+  <!-- BENEFICIOS -->
+  <section class="benefits-section">
+    <div class="container animate-on-scroll">
+      <h2>Beneficios de las Energías Renovables</h2>
+      <ul>
+        <li>Reducción en costos de energía a largo plazo.</li>
+        <li>Disminución de la huella de carbono.</li>
+        <li>Mayor independencia energética.</li>
+        <li>Contribución a un planeta más limpio.</li>
+      </ul>
+    </div>
+  </section>
 
-<script src="observer.js"></script>
+  <!-- SOLUCIONES -->
+  <section class="solutions-section">
+    <div class="container animate-on-scroll">
+      <h2>Soluciones Disponibles</h2>
+      <div class="solutions-container">
+        <div id="solar-card" class="solution-card">
+          <h3>Energía Solar</h3>
+          <p>Paneles fotovoltaicos que convierten la luz solar en electricidad para tu hogar.</p>
+        </div>
+        <div id="wind-card" class="solution-card">
+          <h3>Energía Eólica</h3>
+          <p>Aerogeneradores pequeños para aprovechar la energía del viento en zonas adecuadas.</p>
+        </div>
+        <div id="geo-card" class="solution-card">
+          <h3>Energía Geotérmica</h3>
+          <p>Aprovecha el calor de la tierra para climatizar tu casa de manera eficiente.</p>
+        </div>
+        <div id="bio-card" class="solution-card">
+          <h3>Biomasa</h3>
+          <p>Uso de materia orgánica para generar calor y electricidad de forma renovable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARACIÓN -->
+  <section class="comparison-section">
+    <div class="container animate-on-scroll">
+      <h2>Comparativa de Opciones</h2>
+      <p>La energía solar suele ser la más accesible en climas soleados, mientras que la eólica es ideal para regiones con vientos constantes. La biomasa es una opción práctica en zonas rurales y la geotermia, aunque más costosa, es altamente eficiente a largo plazo.</p>
+    </div>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="closing-section">
+    <div class="container animate-on-scroll">
+      <h2>Construyamos un Futuro Sostenible</h2>
+      <p>La transición hacia energías renovables en el hogar no solo es posible, sino necesaria. Cada pequeña acción cuenta para proteger nuestro planeta.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Creado por Juan Pérez - Proyecto Energías 2025</p>
+  </footer>
+
+  <script>
+    // Animaciones de scroll
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
