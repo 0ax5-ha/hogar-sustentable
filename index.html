@@ -32,23 +32,23 @@
     <section id="benefits" class="benefits-section">
         <div class="container">
             <h2>Beneficios de un Hogar Sustentable</h2>
-            <div class="solutions-container">
-                <article class="solution-card">
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll">
                     <h3>Ahorro Económico</h3>
-                    <p>Reducir el consumo de electricidad y agua disminuye directamente las cuentas mensuales. Con energías limpias puedes ahorrar hasta un <span class="counter" data-target="80">0</span>% en climatización.</p>
-                </article>
-                <article class="solution-card">
+                    <p>Reduce drásticamente tu factura de electricidad, con ahorros de hasta un <span class="counter" data-target="80">0</span>% en climatización y consumo de agua.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.2s;">
                     <h3>Salud y Bienestar</h3>
                     <p>Ambientes con luz natural, buena ventilación y menos contaminantes mejoran la calidad de vida.</p>
-                </article>
-                <article class="solution-card">
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.4s;">
                     <h3>Impacto Ambiental</h3>
-                    <p>Se reducen emisiones de CO₂, se protege el agua y se evita la deforestación.</p>
-                </article>
-                <article class="solution-card">
+                    <p>Disminuye la huella de carbono de tu hogar y contribuye a un planeta más sano.</p>
+                </div>
+                <div class="benefit-card animate-on-scroll" style="transition-delay: 0.6s;">
                     <h3>Independencia Energética</h3>
-                    <p>Con tecnologías como paneles solares o turbinas domésticas se genera energía propia y se evita depender de las fluctuaciones de precios de la red convencional.</p>
-                </article>
+                    <p>Genera tu propia energía con tecnologías como paneles solares, turbinas eólicas o sistemas hidroeléctricos.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -64,30 +64,88 @@
                     </header>
                     <div class="solution-content">
                         <p>Convierte la luz del sol en electricidad. Es la opción más popular y eficiente en muchas regiones de Chile.</p>
+                        <div class="details-panel">
+                            <h4>¿Cómo funciona?</h4>
+                            <p>Los paneles capturan fotones, generando corriente continua (CC). Un inversor la convierte en corriente alterna (CA) para uso doméstico.</p>
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Reducción significativa de la factura eléctrica.</li>
+                                <li>Mantenimiento casi nulo y larga vida útil (>25 años).</li>
+                                <li>Aumenta el valor de la propiedad.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Costo inicial considerable.</li>
+                                <li>Dependencia de la radiación solar.</li>
+                            </ul>
+                        </div>
                     </div>
                 </article>
-                <article class="solution-card animate-on-scroll" id="wind-card">
+
+                <article class="solution-card animate-on-scroll" id="wind-card" style="transition-delay: 0.2s;">
                     <header class="solution-header">
                         <h3>Energía Eólica Doméstica</h3>
                     </header>
                     <div class="solution-content">
-                        <p>Mediante aerogeneradores pequeños, permite aprovechar el viento en zonas rurales y costeras.</p>
+                        <p>Ideal para zonas rurales o costeras con vientos constantes, generando energía día y noche.</p>
+                        <div class="details-panel">
+                            <h4>¿Cómo funciona?</h4>
+                            <p>El viento hace girar las aspas de un aerogenerador, lo que acciona una turbina que produce electricidad.</p>
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Generación 24/7 si hay viento.</li>
+                                <li>Excelente complemento para la energía solar.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Requiere vientos constantes y espacio abierto.</li>
+                                <li>Impacto acústico y visual.</li>
+                            </ul>
+                        </div>
                     </div>
                 </article>
-                <article class="solution-card animate-on-scroll" id="geo-card">
+
+                <article class="solution-card animate-on-scroll" id="geo-card" style="transition-delay: 0.4s;">
                     <header class="solution-header">
                         <h3>Energía Geotérmica</h3>
                     </header>
                     <div class="solution-content">
-                        <p>Aprovecha la temperatura estable del subsuelo para calefacción y refrigeración eficiente.</p>
+                        <p>La solución más eficiente para climatización, usando la temperatura estable de la tierra.</p>
+                        <div class="details-panel">
+                            <h4>¿Cómo funciona?</h4>
+                            <p>Una bomba de calor transfiere el calor del subsuelo a la casa en invierno, y viceversa en verano.</p>
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Ahorros de hasta un 80%.</li>
+                                <li>Sirve para calefacción, refrigeración y agua caliente.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Inversión inicial muy alta.</li>
+                                <li>Requiere terreno para instalación.</li>
+                            </ul>
+                        </div>
                     </div>
                 </article>
-                <article class="solution-card animate-on-scroll" id="hydro-card">
+
+                <article class="solution-card animate-on-scroll" id="hydro-card" style="transition-delay: 0.6s;">
                     <header class="solution-header">
                         <h3>Microhidroelectricidad</h3>
                     </header>
                     <div class="solution-content">
                         <p>En viviendas cercanas a cursos de agua, se pueden instalar turbinas que generan electricidad constante.</p>
+                        <div class="details-panel">
+                            <h4>Ventajas:</h4>
+                            <ul>
+                                <li>Generación continua mientras fluya el agua.</li>
+                                <li>Bajo impacto visual.</li>
+                            </ul>
+                            <h4>Desventajas:</h4>
+                            <ul>
+                                <li>Requiere cercanía a cursos de agua.</li>
+                                <li>Instalación especializada.</li>
+                            </ul>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -130,6 +188,13 @@
                             <td>Bajo a Moderado</td>
                             <td>Muy Bajo</td>
                             <td>Bajo</td>
+                        </tr>
+                        <tr>
+                            <td>Limitaciones</td>
+                            <td>Depende del sol</td>
+                            <td>Depende del viento</td>
+                            <td>Inversión alta</td>
+                            <td>Necesita agua cercana</td>
                         </tr>
                     </tbody>
                 </table>
